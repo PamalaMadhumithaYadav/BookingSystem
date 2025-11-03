@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Scheduling Resources on IIITDWD Campus </title>
+  <title> University at Buffalo Room Booking System </title>
   <link rel="stylesheet" href="{% static "scheduling/css/home.css" %}" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
@@ -20,7 +20,7 @@
     <div class="content flex_space"> 
       <div class="logo">
         
-        <img src= "scheduling\logon.jpg" alt="">
+        <img src= "{% static "scheduling/images/logon.jpg" %}" alt="University at Buffalo logo">
       </div>
       <div class="navlinks">
         <ul id="menulist">
@@ -94,14 +94,14 @@
       <div class="owl-carousel owl-carousel1 owl-theme">
         <div class="items">
           <div class="img">
-            <img src="scheduling/m-block.jpg"  alt="">
+            <img src="{% static "scheduling/images/m-block.jpg" %}"  alt="University at Buffalo meeting space">
             <p>The above room is currently booked for an event.
           </div>
           
         </div>
         <div class="items">
           <div class="img">
-            <img src="scheduling\e-block.JPG" alt="">
+            <img src="{% static "scheduling/images/e-block.JPG" %}" alt="University at Buffalo conference room">
             
             <p>The above room is currently booked for an event.
           </div>
@@ -109,7 +109,7 @@
         </div>
         <div class="items">
           <div class="img">
-            <img src="scheduling\gate.jpg" alt="">
+            <img src="{% static "scheduling/images/gate.jpg" %}" alt="University at Buffalo campus gateway">
             <p>The above room is currently booked for an event.
           </div>
 
@@ -159,21 +159,21 @@
     <div class="owl-carousel owl-carousel1 owl-theme">
       <div class="items">
         <div class="img">
-          <img src="scheduling\m-block.jpg" alt="">
+          <img src="{% static "scheduling/images/m-block.jpg" %}" alt="University at Buffalo lecture hall">
           <p>The above room is booked for a scheduled event.
         </div>
         
       </div>
       <div class="items">
         <div class="img">
-          <img src="scheduling\e-block.JPG" alt="">
+          <img src="{% static "scheduling/images/e-block.JPG" %}" alt="University at Buffalo event venue">
           <p>The above room is booked for a scheduled event.
         </div>
         
       </div>
       <div class="items">
         <div class="img">
-          <img src="scheduling/gate.jpg" alt="">
+          <img src="{% static "scheduling/images/gate.jpg" %}" alt="University at Buffalo campus entrance">
           <p>The above room is booked for a scheduled event.
         </div>
 
@@ -214,7 +214,7 @@
       <div class="heading">
 
         <h2>Booking Rooms</h2>
-        <p>All the available rooms in IIIT Dharwad where you can plan your meetings in a sophisticated environment.
+        <p>Reserve meeting spaces across the University at Buffalo campus and plan your events in a sophisticated, collaborative environment.
         </p>
       </div>
 
@@ -225,7 +225,7 @@
             <div class="text">
               <h2>240 Seater</h2>
               
-              <p>This room gives you 240 seats and 2 screens with a facility of projector equipped in it.
+              <p>This 240-seat lecture hall on UB's North Campus includes dual projection screens and integrated AV support for large events.
               </p>
               <div class="button flex">
                 <button class="primary-btn">BOOK NOW</button>
@@ -238,7 +238,7 @@
             <div class="text">
               <h2>120 Seater Room - 1</h2>
               
-              <p>This room gives you 120 seats and 1 screen equipped with projector.
+              <p>This 120-seat classroom features a full AV package for mid-sized seminars and training sessions.
               </p>
               <div class="button flex">
                 <button class="primary-btn">BOOK NOW</button>
@@ -251,7 +251,7 @@
             <div class="text">
               <h2>120 Seater Room - 2</h2>
               
-              <p>This also one of the room which gives you 120 seats and 1 screen equipped with projector.
+              <p>This additional 120-seat lecture space offers flexible seating and multimedia support for academic and administrative programs.
               </p>
               <div class="button flex">
                 <button class="primary-btn">BOOK NOW</button>
@@ -263,7 +263,7 @@
           
             <div class="text">
               <h2>Personal Meeting Room</h2>
-              <p>This room is designed for the professional meetings. 
+              <p>This private meeting room supports small-group collaboration with on-site conferencing tools. 
               </p>
               <div class="button flex">
                 <button class="primary-btn">BOOK NOW</button>
@@ -276,7 +276,7 @@
             <div class="text">
               <h2>Video Conference Room</h2>
               
-              <p>This room is basically designed for the high power meetings to be conducted by the faculties.
+              <p>Designed for hybrid meetings, this video conference room provides HD cameras and enterprise connectivity for UB faculty and staff.
               </p>
               <div class="button flex">
                 <button class="primary-btn">BOOK NOW</button>
@@ -289,7 +289,7 @@
             <div class="text">
               <h2>Meeting Room</h2>
               
-              <p>This is just one other room where meetings are scheduled.
+              <p>Schedule this versatile meeting room for student organization gatherings or departmental planning sessions.
               </p>
               <div class="button flex">
                 <button class="primary-btn">BOOK NOW</button>
@@ -330,7 +330,7 @@
       <div class="heading">
         
         <h2>Our Services</h2>
-        <p>You can book your refreshments for your palnned meetings.
+        <p>Coordinate on-campus catering and hospitality services for your UB meetings and events.
       </div>
 
 
@@ -357,7 +357,7 @@
           </div>
         </div>
         <div class="right">
-          <img src="images/service.png" alt="">
+          <img src="images/service.png" alt="University at Buffalo hospitality services">
         </div>
       </div>
     </div>
@@ -394,9 +394,8 @@
   <footer>
     <div class="container grid">
       <div class="box">
-        <img src="D:\Knock\Replace logo 1.png" alt="">
-        <p>Indian Institute of Information Technology Dharwad also known as IIIT DHARWAD, is a Public (Autonomous) Collegesituated in Hubali-Dharwad, Karnataka. IIIT DHARWAD was established in the year 2015. Its campus is spread over 61 Acres of land. IIIT DHARWAD offers admission in various courses like B.Tech. 
-          Various Facilities provided by IIIT DHARWAD are Gym, Sports Complex, Library & Information Center, Practical Lab, IT Centers, Auditorium, Canteen, Outdoor Games, Indoor Games, Girls Hostel, Boys Hostel, Conference Hall, Transport Facility, Placement Cell, Parking, CCTV and etc.</p>
+        <img src="D:\Knock\Replace logo 1.png" alt="University at Buffalo logo">
+        <p>The University at Buffalo, part of the State University of New York system, is a flagship public research university located in Buffalo and Amherst, New York. UB offers a wide range of undergraduate, graduate, and professional programs on a vibrant campus that supports research, innovation, and community engagement. From modern classrooms and labs to collaborative meeting areas, UB provides the spaces and resources needed to bring ideas to life.</p>
 
         <div class="icon">
           <i class="fa fa-facebook-f"></i>
@@ -422,11 +421,11 @@
         <p>Here are the contact details.
         </p>
         <i class="fa fa-location-dot"></i>
-        <label>Ittigatti Rd, near Sattur Colony, Dharwad, 580009, Karnataka.</label> <br>
+        <label>12 Capen Hall, Buffalo, NY 14260, United States.</label> <br>
         <i class="fa fa-phone"></i>
-        <label>0836 225 0879</label> <br>
+        <label>(716) 645-2000</label> <br>
         <i class="fa fa-envelope"></i>
-        <label>contact@iiitdwd.ac.in</label> <br>
+        <label>ub-rooms@buffalo.edu</label> <br>
       </div>
     </div>
   </footer>

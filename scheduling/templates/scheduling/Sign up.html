@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>University at Buffalo Room Booking - </title>
     <link rel="stylesheet" href="{% static "scheduling/css/login.css" %}">
     {% comment %} <link href="{% static "scheduling/css/home.css" %}" rel="stylesheet"> {% endcomment %}
 </head>
@@ -33,6 +33,7 @@
         {% endfor %}
         {% csrf_token %}
         <h1>REGISTER</h1>
+         <p>Create your University at Buffalo room booking account.</p>
         <label for="Name" >UserName</label>
         <input type="text" name="Name" id="Name">
         <label for="UserEmail">Email</label>

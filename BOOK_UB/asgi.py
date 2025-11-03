@@ -1,5 +1,5 @@
 """
-ASGI config for BOOK_IIIT project.
+ASGI config for BOOK_UB project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "BOOK_IIIT.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "BOOK_UB.settings")
 
 application = get_asgi_application()
